@@ -3,7 +3,7 @@ Monitor kubernetes resources
 
 
 Kube Monitor is a collection of agents that run at interval and try to establish the health of cluster resources like etcd and VIPs.
-It is written in go and vuejs and can run on user's laptop.
+It is written in GO and VueJS.
 
 
 ## UI
