@@ -9,6 +9,7 @@ It is written in go and vuejs and can run on user's laptop.
 ## UI
 
 If kube-monitor is started with -p [port#], it will generate a UI page showing the overall health of the agents and recent events.
+The page is updated in real-time as agents execute.
 
 ![49f0ee80-056e-11eb-8416-94bf592fd8be (1561×943)20220919192000 (1)](https://user-images.githubusercontent.com/10535265/191146980-88446e1f-aa40-459a-9b12-d76e91860181.png)
 
@@ -162,7 +163,7 @@ This command mount your $HOME/.kube directory in the container to give kube-moni
        -v $HOME/.kube:/kube \
        -v $(pwd)/git:/git \
        -ti kube-monitor \
-       /kube-monitor cluster -u $USER -d1 -s seattle-01 -a etcd
+       /kube-monitor cluster -u $USER -d1 -s site-1 -a etcd
 
 ```
 
